@@ -163,7 +163,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-
+if(numero < 0) {
+  return "Es negativo";
+}
+else if (numero > 0) {
+  return "Es positivo";
+}
+return false ;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -196,24 +202,24 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+var obtenerAreaRectangulo = alto*ancho;
+return obtenerAreaRectangulo;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
-  
+var retornarPerimetro = lado*4;
+return retornarPerimetro; 
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
-  
-
+var areaDelTriangulo = base*altura/2;
+return areaDelTriangulo;
 }
 
 
@@ -221,6 +227,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+  return euro*1.2;
   
 }
 
