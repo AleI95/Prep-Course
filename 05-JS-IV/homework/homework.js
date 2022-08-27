@@ -128,7 +128,7 @@ function sumarLikesDeUsuario (usuario) {
   // Devuelve la suma
   // Tu código:
   var suma = 0
-  for(var i = 0 ; i < usuario.post; i++){
+  for(var i = 0 ; i < usuario.post.length; i++){
     suma = suma + usuario.post[i].likes;
   }
   return suma
